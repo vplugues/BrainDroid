@@ -2,9 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/">
-    android:id="@+id/r2">
-
+    android:id="@+id/rr">
 
     <TextView
         android:layout_width="wrap_content"
