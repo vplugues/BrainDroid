@@ -23,7 +23,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/login"
+            android:text="Welcome to\nBrain Droid"
             android:id="@+id/textView2"
             android:textColor="#ff0829"
             android:textStyle="bold"
@@ -32,95 +32,70 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_weight="1"
-            android:gravity="center" />
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:layout_alignTop="@+id/textView9"
+            android:layout_toRightOf="@+id/textView9"
+            android:layout_toEndOf="@+id/textView9"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="login" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:hint="@string/Password"
+            android:layout_below="@+id/username"
+            android:layout_toRightOf="@+id/textView10"
+            android:layout_toEndOf="@+id/textView10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:typeface="sans" />
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/name"
-                android:id="@+id/textView9"
-                android:textSize="25sp"
-                android:layout_below="@+id/textview2"
-                android:layout_toLeftOf="@+id/textview2"
-                android:layout_toStartOf="@+id/textview2"
-                android:layout_weight="1" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/editText"
-                android:ems="10"
-                android:hint="@string/username"
-                android:inputType="text"
-                android:layout_alignTop="@+id/textView9"
-                android:layout_toRightOf="@+id/textView9"
-                android:layout_toEndOf="@+id/textView9"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/password"
-                android:id="@+id/textView10"
-                android:textSize="25sp"
-                android:layout_alignTop="@+id/editText6"
-                android:layout_toLeftOf="@+id/username"
-                android:layout_toStartOf="@+id/username"
-                android:layout_weight="1" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:ems="10"
-                android:id="@+id/editText6"
-                android:hint="@string/Password"
-                android:layout_below="@+id/username"
-                android:layout_toRightOf="@+id/textView10"
-                android:layout_toEndOf="@+id/textView10"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_weight="1" >
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="10dp"
+            android:layout_gravity="center_horizontal">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/log_in"
-                android:id="@+id/button6"
+                android:id="@+id/login"
                 android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/button7"
-                android:layout_toStartOf="@+id/button7"
-                android:layout_marginRight="71dp"
-                android:layout_marginEnd="71dp"
-                android:layout_weight="1" />
+                android:layout_toLeftOf="@+id/register"
+                android:layout_toStartOf="@+id/register"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="login" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/register"
-                android:id="@+id/button7"
-                android:layout_alignTop="@+id/button6"
+                android:id="@+id/register"
+                android:layout_alignTop="@+id/login"
                 android:layout_alignLeft="@+id/textview2"
                 android:layout_alignStart="@+id/textview2"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:onClick="registration" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
