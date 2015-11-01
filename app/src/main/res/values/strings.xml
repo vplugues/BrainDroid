@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinalProject2</string>
+    <string name="app_name">Brain Droid</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -11,4 +11,6 @@
     <string name="log_in">Log In</string>
     <string name="register">Register</string>
     <string name="Register">Register</string>
+    <string name="MainButton">Click Here</string>
+
 </resources>
